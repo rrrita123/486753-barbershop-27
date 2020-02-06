@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="main-nav">
+        <ul class="site-navigation">
           <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="news.html">НОВОСТИ</a></li>
           <li><a href="price.html">ПРАЙС-ЛИСТ</a></li>
           <li><a href="catalog.html">МАГАЗИН</a></li>
           <li><a href="contacts.html">КОНТАКТЫ</li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <li>
-            <button type="button">ВХОД</button>
+            <a class="login-link" href="#">ВХОД</a>
           </li>          
         </ul>          
         <a>
@@ -29,20 +32,20 @@
       <h1>Барбершоп "Бородинский"</h1>
       <section class="advantage">
         <h2>Преимущество</h2>
-        <ul>
-          <li>
+        <ul class="advantage-list">
+          <li class="advantage-item">
             <h3>БЫСТРО</h3>
             <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО
-               И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+              И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
           </li>
-          <li>
+          <li class="advantage-item">
             <h3>КРУТО</h3>
             <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
                 МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
                 ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
             </p>
           </li>
-          <li>
+          <li class="advantage-item">
             <h3>ДОРОГО</h3>
             <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ 
               ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
@@ -50,71 +53,115 @@
         </ul>
       </section>
 
-      <section class="news">
-        <H2>НОВОСТИ</H2>
-        <ul>
-          <li>
-            <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ 
-              СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-            <time datetime="2020-01-11">11 января</time>
-          </li>
-          <li>
-            <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ 
-              МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-            <time datetime="2020-01-18">18 января</time>
-          </li>
-        </ul>
-        <a href="news.html">ВСЕ НОВОСТИ</a>
+      <div class="index-column">
+        <section class="news">
+          <H2>НОВОСТИ</H2>
+          <ul class="new-list">
+            <li class="new-item">
+              <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ 
+                СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+              <time datetime="2020-01-11">11 января</time>
+            </li>
+            <li class="new-item">
+              <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ 
+                МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+              <time datetime="2020-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class="button" href="news.html">ВСЕ НОВОСТИ</a>
 
-      </section class="foto">
-        <h2>ФОТОГАЛЕРЕЯ</h2>
-        <figure>
-          <a href="#">
-            <img src="img/layer-21.png" width="286" height="164" alt="Интерьер">
-          </a>
-        </figure>
-        <button type="button">НАЗАД</button>
-        <button type="button">ВПЕРЕД</button>
-      </section>
+        </section class="gallery">
+          <h2>ФОТОГАЛЕРЕЯ</h2>
+          <figure class="gallery-img">
+            <a href="#">
+              <img src="img/layer-21 (1).jpg" width="286" height="164" alt="Интерьер">
+            </a>
+          </figure>
+          <button class="button" type="button">НАЗАД</button>
+          <button class="button" type="button">ВПЕРЕД</button>
+        </section>
+    </div>
 
-      <section class="contacts">
-        <p>
-            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-            ТЕЛЕФОН: +7 (495) 666-02-66<br>
-            ВРЕМЯ РАБОТЫ:<br>
-            ПН—ПТ: С 10:00 ДО 22:00<br>
-            СБ—ВС: С 10:00 ДО 19:00<br>   
-        </p>
-        <a href="map.html">КАК ПРОЕХАТЬ</a>
-        <a href="contacts.html">ОБРАТНАЯ СВЯЗЬ</a>
-      </section>
-
-      <section class="record">
-        <h2>ЗАПИСАТЬСЯ</h2>
-        <p>
-            УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ 
-            ПОДТВЕРЖДЕНИЯ БРОНИ
-        </p>
-      </section>
+      <div class="index-column">
+        <section class="contacts">
+          <p>
+              БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+              АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+              ТЕЛЕФОН: +7 (495) 666-02-66<br>
+              ВРЕМЯ РАБОТЫ:<br>
+              ПН—ПТ: С 10:00 ДО 22:00<br>
+              СБ—ВС: С 10:00 ДО 19:00<br>   
+          </p>
+          <a class="button" href="map.html">КАК ПРОЕХАТЬ</a>
+          <a class="button" href="contacts.html">ОБРАТНАЯ СВЯЗЬ</a>
+        </section>
+      
+        <section class="record">
+          <h2>ЗАПИСАТЬСЯ</h2>
+            <form class="record-class" action="https//echo.htmlacademy.ru" method="post">
+              <div class="record-item">
+                <label for="record-date">Дата</label>
+                <input type="date" name="date" id="record-date" value="08.10.2019">
+              </div>
+              <div class="record-item">
+                <label for="record-time">Время</label>
+                <input type="time" name="time" id="record-time" value="10:00">
+              </div>
+              <div class="record-item">
+                <label for="record-name">Ваше имя</label>
+                <input type="text" name="text" id="record-name" placeholder="Борода">
+              </div>
+              <div class="record-item">
+                <label for="record-tel">Телефон</label>
+                <input type="tel" name="tel" id="record-tel" placeholder="8-123-122-15-88">
+              </div>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+        </section>
+      </div>
     </main>
 
-    <footer>
-      <p>
+    <footer class="main-footer">
+      <p class="footer-contacts">
           БАРБЕРШОП «БОРОДИНСКИЙ»<br>
           АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
           <a href="contacts.html">КАК НАС НАЙТИ?</a><br>
           ТЕЛЕФОН: +7 (495) 666-02-66
       </p>
-      <div>
+      <div class="footer-social">
         <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
-        <a href="#">B</a>
-        <a href="#">F</a>
-        <a href="#">I</a>
+        <ul>
+          <li><a class="social-button" href="#"><img src="img/vk.png" width="27" height="15" alt="Иконка ВК"></a></li>
+          <li><a class="social-button" href="#"><img src="img/facebook.png" width="11" height="22" alt="Иконка facebook"></a></li>
+          <li><a class="social-button" href="#"><img src="img/instagram.png" width="20" height="20" alt="Иконка instagram"></a></li>
+        </ul>
       </div>
-      <p>РАЗРАБОТАНО:</p>
-      <a href="#">html academy</a>
+      <p class="footer-copyright">
+        <b>РАЗРАБОТАНО:</b>
+        <a class="button" href="#">html academy</a>
+      </p>
     </footer>
 
+
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль</p>
+        <form class="login-form" action="https//echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="user">Логин</label>
+            <input class="login-icon-user" type="text" name="login" id="user" placeholder="Логин">
+          </div>
+            <label for="user-password">Пароль</label>
+            <input class="password-icon-user" type="password" name="password" id="user-password" placeholder="Пароль">
+          <div>
+          <div>
+            <input type="checkbox" name="remember" id="login-password-info">
+            <label for="login-password-info">Запимните меня</label>
+            <a href="#">Я забыл пароль</a>
+          </div>
+          <button type="submit">Войти</button>
+        </form>
+        <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>

@@ -1,0 +1,281 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: black;
+	background-image: url("../img/bg-index.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;	
+}
+
+.inner-page {
+	color: #000000;
+
+	background-color: f9f6f3;
+	background-image: url("../img/bg-index-column.png");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	text-transform:uppercase;
+
+	background-color: #000000;
+	border: none;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+	background-color: #653d15;
+}
+
+.main-nav {
+	font-size: 16px;
+	line-height: 20px;
+	color: #ffffff;
+
+	background-color: black;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color:#ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:active,
+.user-navigation a:hover,
+.user-navigation a:active {
+background-color: #242424;
+}
+
+.advantage-list {
+	list-style: none;
+}
+
+.advantage-item {
+	text-align: center;
+}
+
+.advantage-item h3 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.index-column {
+	color:#000000;
+
+	background-color: #f8f5f2;
+	background-image: url("../img/bg-index-column.png");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.index-column h2 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.new-list {
+	list-style: none;
+}
+
+.new-item {
+	text-transform: none;
+}
+
+.gallery-img {
+	background-color: #e5e5e5;
+	border: 7px solid #ffffff;
+}
+
+.record-item input {
+	font: inherit;
+
+	border: 2px solid #000101;
+	background-color: transparent;
+}
+
+.record-item input:focus {
+	border-color: #653d15;
+}
+
+.main-footer {
+	color: #ffffff;
+
+	background-color: 1f1f1f;
+	background-image: url("../img/bg-footer.png");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.footer-contacts a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+	text-decoration: none;
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-social li {
+	color: #ffffff;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:active {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+/* Catalog.html */
+.page-title {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a {
+	color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	text-decoration: underline;
+}
+
+.breadcrumbs-current {
+	color: #aba9a7;
+}
+
+/*Убтраем рамки с fieldset*/
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 18px;
+}
+
+/* Цвет шрифра lable*/
+.filter-option:hover + label,
+.filter-option:focus + label {
+	color: #663d15;
+}
+
+/*Добавим цвет для неактивного поля desabled */
+.filter-option:disabled + label {
+	color: #000000;
+
+	opacity: 0.5;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item {
+	background-color: #f8f8f8;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+	color: #000000;
+}
+
+.catalog-item h3 {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.catalog-category {
+	text-transform: none;
+}
+
+.catalog-item-price b {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+
+	background-color: #e5e5e5;
+}
+
+.catalog-item-price .button {
+	line-height: 20px;
+	color: #ffffff;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item a {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:active,
+.pagination-item a:focus {
+	background-color: #663d15;
+}
+
+.pagination-item-current a {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:active,
+.pagination-item-current a:focus {
+	color: #000000;
+
+	background-color: #ffffff;
+}
